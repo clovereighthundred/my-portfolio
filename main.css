@@ -237,6 +237,7 @@ footer a{
     text-decoration: none; 
 }
 
+
 /* MEDIA QUERIES */
 
 /* 1. Responsive Cards  */ 
@@ -245,17 +246,24 @@ footer a{
         margin: 10px 4vw;
     }
     .projects {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 18px;
+    }
+    #project-container h2,
+    #about-me h2,
+    #contact-info h2 {
+        font-size: 3rem;
     }
     .project-card {
         padding: 16px 8px;
     }
 }
 
-/* 2. Navigation Bar  */
+/* 2. Navigation Bar etc. */
 @media (max-width: 700px) {
     header {
         padding: 12px 16px;
+        height: 56px;
     }
     nav ul {
         gap: 1rem;
@@ -264,4 +272,63 @@ footer a{
         font-size: 0.95rem;
         padding: 6px 8px;
     }
+    #hero {
+    margin: 20px 2vw;
+    padding: 30px 5px;
+    }
+    #hero-heading {
+        font-size: 2.5rem;
+    }
+    #project-container {
+        margin: 10px 2vw;
+    }
+    .project-card {
+        padding: 12px 4px;
+    }
+    #about-me p,
+    .contact-links p {
+        font-size: 1.1rem;
+    }
+    #contact-info h2 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+    #hero {
+        margin: 10px 2vw;
+        padding: 20px 2vw;
+    }
+    #hero-heading {
+        font-size: 1.5rem;
+    }
+    #project-container h2,
+    #about-me h2,
+    #contact-info h2 {
+        font-size: 2rem;
+    }
+    .project-card img {
+        max-width: 100%;
+    }
+    .contact-links {
+        gap: 16px;
+        flex-direction: column;
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
