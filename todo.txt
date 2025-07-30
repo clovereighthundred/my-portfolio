@@ -1,5 +1,38 @@
-take projects screenshots for display.
-fix Weather app bug, failed to fetch error before screenshotting
+take projects screenshots for display. ✅
+fix Weather app bug, failed to fetch error before screenshotting ✅
 Get icons to contain links (for UX)
 Page styling and UI
 Prepare to host on Vercel
+
+
+
+
+/* Responsive styles */
+@media (max-width: 700px) {
+    header {
+        padding: 12px 16px;
+    }
+    nav ul {
+        gap: 1rem;
+    }
+    nav ul li a {
+        font-size: 0.95rem;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}
