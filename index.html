@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <title>My Portfolio Website</title>
 </head>
 
@@ -17,65 +18,74 @@
         <nav>   <!--Navigation Bar -->
             <!-- <h1>Adefela.</h1> -->
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#project-container">PROJECTS</a></li>
+                <li><a href="#about-me">ABOUT</a></li>
+                <li><a href="#contact-info">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
     <main> <!--Main page content-->
 
-        <section id="hero"> <!--Hero section with header and tagline-->
+        <section id="hero" class="fade-in-up"> <!--Hero section with header and tagline-->
             <h1 id="hero-heading">
-                Crafting Intuitive Interfaces for the Modern Web.
+                Crafting Intuitive Interfaces for the <span>Modern Web</span>.
             </h1>
             <p id="hero-caption">Hi, I'm Adefela👋, a Frontend developer turning ideas into seamless, responsive and high-performance websites.</p>
         </section>
 
-        <section id="project-container">  <!--Projects displayed in this container-->
+        <section id="project-container" class="fade-in-up">  <!--Projects displayed in this container-->
             <h2>Selected Works</h2>
 
-            <div class="projects" id="project1">
-                <img src="" alt="">
-                <h3>Startup Landing Page.</h3>
-                <p>Designed and developed a prototype landing page for an Tech Startup. Made with React.js, TypeScript, Tailwind CSS</p>
-            </div>
+            <div class="projects"> <!--Grid Container-->
+                <div class="project-card">
+                    <img src="images/startup.png" alt="landing page for a startup">
+                    <h3>Startup Landing Page.</h3>
+                    <p>Designed and developed a prototype landing page for an Tech Startup. Made with React.js, TypeScript, Tailwind CSS</p>
+                    <a href="" class="project-link"><img src="images/linkicon.png" alt=""></a>
+                </div>
 
-            <div class="projects" id="project2">
-                <img src="" alt="">
-                <h3>Weather Web App.</h3>
-                <p>A web application that gives real-time weather updates and forecasts of any location and displays on a user-friendly interface. Made using HTML, CSS, JavaScript and the Openweathermap API.</p>
-            </div>
+                <div class="project-card">
+                    <img src="images/weatherapp.png" alt="a weather web app">
+                    <h3>Weather Web App.</h3>
+                    <p>A web application that gives real-time weather updates and forecasts of any location and displays on a user-friendly interface. Made using HTML, CSS, JavaScript and the Openweathermap API.</p>
+                    <a href="" class="project-link"><img src="images/linkicon.png" alt=""></a>
+                </div>
 
-            <div class="projects" id="project3">
-                <img src="" alt="">
-                <h3>Social Links Profile.</h3>
-                <p>A minimal website that displays professional and social media links for a developer.</p>
-            </div>
+                <div class="project-card">
+                    <img src="images/social links profile.png" alt="social media links profile">
+                    <h3>Social Links Profile.</h3>
+                    <p>A minimal website that displays professional and social media links for a developer.</p>
+                    <a href="" class="project-link"><img src="images/linkicon.png" alt=""></a>
+                </div>
 
-            <div class="projects" id="project4">
-                <img src="" alt="">
-                <h3>To-do List.</h3>
-                <p>A task management web application that helps users keep track of their daily actvities. It allows users to add, update, store and delete tasks. Made using HTML, CSS and JavaScript.</p>
-            </div>
+                <div class="project-card">
+                    <img src="images/todoapp.png" alt="task management web app">
+                    <h3>To-do List.</h3>
+                    <p>A task management web application that helps users keep track of their daily actvities. It allows users to add, update, store and delete tasks. Made using HTML, CSS and JavaScript.</p>
+                    <a href="" class="project-link"><img src="images/linkicon.png" alt=""></a>
+                </div>
 
-            <div class="projects" id="project5">
-                <img src="" alt="">
-                <h3>Calculator Web App.</h3>
-                <p>A simple and functional calculator application that takes user input, processes basic arithmetic operations and displays results on a clean and familiar UI. Made using HMTL, CSS and JavaScript.</p>
-            </div>
+                <div class="project-card">
+                    <img src="images/calculator.png" alt="a simple calculator app">
+                    <h3>Calculator Web App.</h3>
+                    <p>A simple and functional calculator application that takes user input, processes basic arithmetic operations and displays results on a clean and familiar UI. Made using HMTL, CSS and JavaScript.</p>
+                    <a href="" class="project-link"><img src="images/linkicon.png" alt=""></a>
+                </div>
 
-            <div class="projects" id="project6">
-                <img src="" alt="">
-                <h3>Stopwatch.</h3>
-                <p>A simple stopwatch program made using HTML, CSS and JavaScript.</p>
+                <div class="project-card">
+                    <img src="images/stopwatch.png" alt="a stopwatch program"> 
+                    <h3>Stopwatch.</h3>
+                    <p>A simple stopwatch program made using HTML, CSS and JavaScript.</p>
+                    <a href="" class="project-link"><img src="images/linkicon.png" alt=""></a>
+                </div>
             </div>
+            
         </section>
 
-        <section id="about-me"> <!--About me section and my tech stack-->
-            <h2>Developer, Designer and Tech Enthusiast.</h2>
+        <section id="about-me" class="fade-in-up"> <!--About me section and my tech stack-->
+            <h2>Developer, Designer and <span>Tech</span> Enthusiast.</h2>
             <p>I'm an Information Systems major at Covenant University and a growing Frontend developer. 
                 I'm learning currently about UI design and other principles to help me craft amazing websites and take my frontend skills to the next level. 
                 I'm curious about backend development and AI, and what powers most of the applications and systems that are shaping the future. 
@@ -83,24 +93,29 @@
             </p>
 
             <div id="my-stack">
-                <h3>My Stack</h3>
+                <h3>My Tech Stack</h3>
                 <p>HTML5, CSS3, JavaScript(ES6+), React.js, Tailwind CSS, PostgreSQL, MongoDB, Git and Figma for design.</p>
             </div>
         </section>
 
-        <section id="contact-info"> <!--Contact links and info-->
-            <h2>Got any questions or want to collaborate? Feel free to reach out ❤️</h2>
-            <p>Send me an email at: <a href="" class="email">@felaadegbokun@gmail</a></p>
-            <p>Socials: 
-                <a href="#">Telegram, </a>
-                <a href="#">LinkedIn, </a>
-                <a href="#">Github.</a>
-            </p>
+        <section id="contact-info" class="fade-in-up"> <!--Contact links and info-->
+            <h2>Got any <span>questions</span> or want to collaborate? Feel free to reach out</h2>
+
+            <div class="contact-links">
+                <p>Send me an email at: <a href="mailto:@felaadegbokun@gmail.com" class="email">felaadegbokun@gmail</a></p>
+                <p>Socials: 
+                    <a href="https://t.me/eighthundredd">Telegram, </a>
+                    <a href="www.linkedin.com/in/adefela-adegbokun">LinkedIn, </a>
+                    <a href="https://github.com/clovereighthundred">Github.</a>
+                </p>
+            </div>
         </section>
     </main>
+
+    <hr>
     
     <footer>
-            <p>Copyright Adefela 2025. All rights reserved.</p>
+        <p>Copyright <a href="index.html">Adefela</a> 2025. All rights reserved.</p>
     </footer>
 
 </body>
