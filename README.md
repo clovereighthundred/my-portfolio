@@ -4,6 +4,9 @@ A minimal, responsive, and modern portfolio website showcasing my frontend proje
 
 [View Live Portfolio](https://adefelaadegbokun.vercel.app)
 
+## Screenshots
+![Homepage Screenshot](images/screenshot.png)
+
 ## Features
 
 - Responsive, mobile-friendly layout
