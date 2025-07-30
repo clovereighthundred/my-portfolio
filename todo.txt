@@ -1,0 +1,5 @@
+take projects screenshots for display.
+fix Weather app bug, failed to fetch error before screenshotting
+Get icons to contain links (for UX)
+Page styling and UI
+Prepare to host on Vercel
